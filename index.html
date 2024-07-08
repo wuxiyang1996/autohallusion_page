@@ -199,75 +199,82 @@
 <!-- End paper abstract -->
 
 
-<!-- Youtube video -->
 <section class="section hero is-small">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">The Problem</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+    <h2 class="title is-3">Experiment Results</h2>
+      <p>We use the following metrics to evalute our results, including: Attack Success Rate (ASR),
+        Manipulation Attack Success Rate (MASR) (Compare the generated response with the ground truth generated based
+        on the intention of the image generation and editing), and Conflict Attack Success Rate (CASR) (Ask a set of
+        questions and try to find conflicts among all responses to those visual questions). </p>
+      <br>
+      <div class="image">
+          <img src="static/images/results.png" alt="Main Results" style="width: 800px; display: block; margin: auto;">
+        </div>
+      <br>
+      <p>We conduct evaluation experiments over SOTA LVLMs with our AUTOHALLUSION on synthetic and real-world data. Our
+        proposed three manipulation strategies achieved high success rates (the higher the better) on synthetic and
+        real-world data.</p>
 
-          <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-            <source src="static/videos/problem.mp4"
-            type="video/mp4">
-          </video>
+      <br>
+
+  <h4 class="title is-4">Ablation Studies</h4>
+  <div class="container is-max-desktop" style="max-width: 1200px; margin: auto;">
+    <div class="columns is-centered">
+
+
+      <!-- Visual Effects. -->
+      <div class="column" style="padding:0 60px 0 60px;">
+        <div class="content">
+          <div class="image">
+            <img src="static/images/window_size.png" alt="Object Size" style="width: 600px; display: block; margin: auto;">
+          </div>
+          <p align="left">
+            <b>Object Size: </b> Larger objects reduce hallucinations, including those from image manipulation and
+            response conflicts, while LVLMs are more vulnerable to smaller perturbed objects.
+          </p>
+
         </div>
       </div>
-      <div class="text-content" style="text-align: left; margin-bottom: 30px;">
-        The use of LLMs/VLMs has revolutionized how we interact with robots,
-        offering unprecedented levels of understanding and responsiveness. But at what cost?
-      </div>
-    </div>
-  </div>
-</section>
+      <!--/ Visual Effects. -->
 
+      <!-- Matting. -->
+      <div class="column" style="padding:0 60px 0 60px;">
+        <div class="columns is-centered">
+          <div class="column content">
 
-<!-- Youtube video -->
-<section class="section hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">The Method</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+            <div class="image">
+            <img src="static/images/query.png" alt="Object-scene Alignment" style="width: 600px; display: block; margin: auto;">
+            </div>
+            <p align="left">
+              <b>Object-scene Alignment: </b> Results show that the abnormal object insertion strategy shows a
+              significantly high attack success rate (ASR) over questions probing the existence of perturbed objects,
+              and the same object insertion strategy shows a greatly lower overall manipulation attack success rate (MASR).
+            </p>
 
-          <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-            <source src="static/videos/method.mp4"
-            type="video/mp4">
-          </video>
         </div>
       </div>
-      <div class="text-content" style="text-align: left; margin-bottom: 30px;">
-        We uncover how these advancements while being impressive, expose robotic systems to even simple
-        adversarial attacks, threatening their reliability and safety.
       </div>
-    </div>
-  </div>
-</section>
 
-
-<section class="section hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">The Result</h2>
-      <div style="margin-bottom: 0px; text-align: center;"> <!-- Adjust the margin as needed -->
-        <img src="static/images/method.png" alt="Teaser Image" style="width: 1000px; display: block; margin: auto;"> <!-- Adjust width as needed -->
-        <!-- Caption with constrained width -->
       </div>
-      <div class="text-content" style="text-align: left; margin-bottom: 30px;">
 
-        <b>Multi-modal Attacks to LLMs/VLMs in Robotic Applications.</b> The middle pipeline is an abstract robotic
-        system with LLMs/VLMs, and multi-modal attacks are applied at visual and text prompts. The left-hand side provides
-        different attacks to images, such as reducing image quality, applying transformation, and adding new objects.
-        The right-hand side shows different types of attacks in text, including simple rephrasing, stealth rephrasing,
-        extension rephrasing, and rephrasing of adjectives and nouns.
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <br>
+        <div class="image">
+            <img src="static/images/heatmap4.png" alt="Object Prompting and VQA Alignment" style="width: 800px; display: block; margin: auto;">
+            </div>
+        <br>
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <p align="left">
+            <b>Object Prompting and VQA Alignment: </b> Our results affirm the effectiveness of our pipeline in crafting
+          hallucination cases with a high attack success rate, while using the same model for object prompting and VQA
+          tasks usually causes more hallucinations due to inherited biases.
+          </p>
+        </div>
+        </div>
       </div>
-    </div>
-  </div>
+
 </section>
 
 
