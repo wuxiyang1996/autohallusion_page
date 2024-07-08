@@ -367,6 +367,22 @@
           have been digitally added onto a chair in the top half of the image.</b> It looks quite out of place in the
           office setting depicted in the photo.
           </p>
+          <br>
+          <p align="left">
+            <b>Attack: </b> Adding new irrelevant object <i>Sheep</i> with image-level caption – Existence
+            <br>
+            <b>Question: </b> We have an image depicting This image shows a contemporary office workspace featuring
+            several desks cluttered with technological and office equipment. On the left side of the image, there is a
+            vivid scene where a brown goat is digitally superimposed and sitting atop a purple office chair. This
+            humorous addition contrasts with the otherwise ordinary office setting. The workspace is equipped with
+            multiple monitors, laptops, office supplies like pens and staplers, and personal items. The floor is tiled,
+            and the overall appearance suggests a busy, creative, and somewhat messy environment typical of tech or
+            design-oriented workplaces. Is there a sheep in this image?
+            <br>
+            <b>GPT-4V: </b> <b style="color: red;background:orange">No, there isn't a sheep in the image.</b>
+            What you see is a brown goat that is digitally superimposed and sitting on a purple office chair.
+            There are no sheep visible in the picture.
+          </p>
 
         </div>
       </div>
@@ -380,9 +396,29 @@
                 <img src="static/showcases/1717040455/results.png" alt="Edited Image" style="width: 400px; display: block; margin: auto;">
               </div>
             <p>Edited Image</p>
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+            <p align="left">
+              <b>Attack: </b> Adding new irrelevant object <i>Sheep</i> – Existence
+              <br>
+              <b>Question: </b> Is there a sheep in this image?
+              <br>
+              <b>LLaVA-1.6: </b> <b style="color: red;background:yellow">Yes, there is a sheep in this image.</b>
+              It appears to be superimposed onto the scene, as it is not a typical setting for a sheep to be found.
+              The sheep is sitting on the back of a purple office chair.
+            </p>
+            <br>
+            <p align="left">
+              <b>Attack: </b> Adding new irrelevant object <i>Sheep</i> with image-level caption – Existence
+              <br>
+              <b>Question: </b> We have an image depicting This image shows a contemporary office workspace featuring
+              several desks cluttered with technological and office equipment. On the left side of the image, there is a
+              vivid scene where a brown goat is digitally superimposed and sitting atop a purple office chair. This
+              humorous addition contrasts with the otherwise ordinary office setting. The workspace is equipped with
+              multiple monitors, laptops, office supplies like pens and staplers, and personal items. The floor is tiled,
+              and the overall appearance suggests a busy, creative, and somewhat messy environment typical of tech or
+              design-oriented workplaces. Is there a sheep in this image?
+              <br>
+              <b>LLaVA-1.6: </b> <b style="color: red;background:orange">No, there is no sheep in this image.</b>
+              The animal in the image is a goat, not a sheep.
             </p>
           </div>
 
