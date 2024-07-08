@@ -271,7 +271,7 @@
 </section>
 
 
-<section class="hero  is-small">
+<section class="hero is-small-light">
   <div class="hero-body">
     <div class="container">
     <h2 class="title is-3">The Crafted Hallusion Showcases</h2>
@@ -291,17 +291,21 @@
           <br>
         <b>Image Manipulation: </b> <i>Sheep</i> is inserted to the image.
         </div>
+        </div>
+      </div>
+      </div>
+    </div>
 
-  <div class="container is-max-desktop" style="max-width: 1600px; margin: auto;">
+  <div class="container is-max-desktop" style="max-width: 1200px; margin: auto;">
     <div class="columns is-centered">
 
       <!-- Visual Effects. -->
-      <div class="column" style="padding:0 80px 0 80px;">
+      <div class="column" style="padding:0 60px 0 60px;">
         <div class="content">
           <div class="publication-video">
-            <img src="static/showcases/1717040455/init.png" alt="Original Image" style="width: 400px; display: block; margin: auto;">
+            <img src="static/showcases/insert_1/init.png" alt="Original Image" style="width: 400px; display: block; margin: auto;">
           </div>
-          <p>Original Image</p>
+          <p align="center">Original Image</p>
           <p align="left">
             <b>Attack: </b> Adding new irrelevant object <i>Sheep</i> – Existence
             <br>
@@ -333,13 +337,13 @@
       <!--/ Visual Effects. -->
 
       <!-- Matting. -->
-      <div class="column" style="padding:0 80px 0 80px;">
+      <div class="column" style="padding:0 60px 0 60px;">
         <div class="columns is-centered">
           <div class="column content">
             <div class="publication-video">
-                <img src="static/showcases/1717040455/results.png" alt="Edited Image" style="width: 400px; display: block; margin: auto;">
+                <img src="static/showcases/insert_1/results.png" alt="Edited Image" style="width: 400px; display: block; margin: auto;">
               </div>
-            <p>Edited Image</p>
+            <p align="center">Edited Image</p>
             <p align="left">
               <b>Attack: </b> Adding new irrelevant object <i>Sheep</i> – Existence
               <br>
@@ -370,164 +374,87 @@
       </div>
       </div>
       </div>
-  </div>
-    <!--/ Matting. -->
 </section>
 
-<!--<section class="hero  is-small">-->
-<!--  <div class="container is-max-desktop">-->
 
-<!--    <div class="columns is-centered">-->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+       <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+         <br>
+         <br>
+        <b class="title is-4">Abnormal Object Insertion – Spatial Relation </b>
+          </div>
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <b>Scene: </b> <i>Cozy bedroom interior</i>
+         <br>
+        <b>Detected Objects: </b> <i>Blue bed comforter</i>, <i>Wooden bookshelf, books</i>, <i>Round wall mirror</i>,
+          <i>Wooden bedroom dresser</i>, <i>Window with view</i>
+          <br>
+        <b>Inserted Object: </b> <i>Stop Sign</i>
+          <br>
+        <b>Image Manipulation: </b> <i>Stop Sign</i> is inserted to the image.
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
 
-<!--      &lt;!&ndash; Visual Effects. &ndash;&gt;-->
-<!--      <div class="column">-->
-<!--        <div class="content">-->
-<!--          <h2 class="title is-3">Visual Effects</h2>-->
-<!--          <p>-->
-<!--            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect-->
-<!--            would be impossible without nerfies since it would require going through a wall.-->
-<!--          </p>-->
-<!--          <img src="static/showcases/No_Attack.gif" alt="No Attack" style="width: 400px; display: block; margin: auto;">-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      &lt;!&ndash;/ Visual Effects. &ndash;&gt;-->
+  <div class="container is-max-desktop" style="max-width: 1200px; margin: auto;">
+    <div class="columns is-centered">
 
-<!--      &lt;!&ndash; Matting. &ndash;&gt;-->
-<!--      <div class="column">-->
-<!--        <h2 class="title is-3">Matting</h2>-->
-<!--        <div class="columns is-centered">-->
-<!--          <div class="column content">-->
-<!--            <p>-->
-<!--              As a byproduct of our method, we can also solve the matting problem by ignoring-->
-<!--              samples that fall outside of a bounding box during rendering.-->
-<!--            </p>-->
-<!--            <img src="static/showcases/Adjective_Rephrasing.gif" alt="Adjective Rephrasing" style="width: 400px; display: block; margin: auto;">-->
-<!--          </div>-->
+      <!-- Visual Effects. -->
+      <div class="column" style="padding:0 60px 0 60px;">
+        <div class="content">
+          <div class="publication-video">
+            <img src="static/showcases/insert_2/init.png" alt="Original Image" style="width: 400px; display: block; margin: auto;">
+          </div>
+          <p align="center">Original Image</p>
+          <p align="left">
+            <b>Attack: </b> Determine spatial relation between the irrelevant object <i>Stop Sign</i>>
+            and the existing object: <i>Round wall mirror</i>.
+            <br>
+            <b>Question: </b> Is the stop sign on the right of a/an Round wall mirror. in this image, given their center
+            positions? Where Round wall mirror. is the one that circular mirror with a simple wooden frame, reflecting a room.
+            <br>
+            <b>GPT-4V: </b> In the image provided, the stop sign is edited into the scene and is located centrally on
+            the windowpane. The round wall mirror, described as a circular mirror with a simple wooden frame, is on the
+            left side of the room above a dresser. <b style="color: red;background:lightpink"> Based on their
+            positions, the stop sign is not on the right of the round wall mirror. It is instead to the left of the
+            mirror when viewed from the perspective of someone standing in front of the bed facing the window
+            and the dresser.</b>
+          </p>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
 
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;/ Matting. &ndash;&gt;-->
+      <!-- Matting. -->
+      <div class="column" style="padding:0 60px 0 60px;">
+        <div class="columns is-centered">
+          <div class="column content">
+            <div class="publication-video">
+                <img src="static/showcases/insert_2/results.png" alt="Edited Image" style="width: 400px; display: block; margin: auto;">
+              </div>
+            <p align="center">Edited Image</p>
+            <p align="left">
+              <b>Attack: </b> Determine spatial relation between the irrelevant object <i>Stop Sign</i>>
+              and the existing object: <i>Round wall mirror</i>.
+              <br>
+              <b>Question: </b> Is the stop sign on the right of a/an Round wall mirror. in this image, given their center
+              positions? Where Round wall mirror. is the one that circular mirror with a simple wooden frame, reflecting a room.
+              <br>
+              <b>LLaVA-1.6: </b> Yes, the stop sign is on the right of the Round wall mirror. The mirror is located
+              to the left of the stop sign in the image.
+            </p>
+          </div>
 
-<!--    &lt;!&ndash; Animation. &ndash;&gt;-->
-<!--    <div class="columns is-centered">-->
-<!--      <div class="column is-full-width">-->
-<!--        <h2 class="title is-3">Animation</h2>-->
-
-<!--        &lt;!&ndash; Interpolating. &ndash;&gt;-->
-<!--        <h3 class="title is-4">Interpolating states</h3>-->
-<!--        <div class="content has-text-justified">-->
-<!--          <p>-->
-<!--            We can also animate the scene by interpolating the deformation latent codes of two input-->
-<!--            frames. Use the slider here to linearly interpolate between the left frame and the right-->
-<!--            frame.-->
-<!--          </p>-->
-<!--        </div>-->
-<!--        <div class="columns is-vcentered interpolation-panel">-->
-<!--          <div class="column is-3 has-text-centered">-->
-<!--            <img src="./static/images/interpolate_start.jpg"-->
-<!--                 class="interpolation-image"-->
-<!--                 alt="Interpolate start reference image."/>-->
-<!--            <p>Start Frame</p>-->
-<!--          </div>-->
-<!--          <div class="column interpolation-video-column">-->
-<!--            <div id="interpolation-image-wrapper">-->
-<!--              Loading...-->
-<!--            </div>-->
-<!--            <input class="slider is-fullwidth is-large is-info"-->
-<!--                   id="interpolation-slider"-->
-<!--                   step="1" min="0" max="100" value="0" type="range">-->
-<!--          </div>-->
-<!--          <div class="column is-3 has-text-centered">-->
-<!--            <img src="./static/images/interpolate_end.jpg"-->
-<!--                 class="interpolation-image"-->
-<!--                 alt="Interpolation end reference image."/>-->
-<!--            <p class="is-bold">End Frame</p>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <br/>-->
-<!--        &lt;!&ndash;/ Interpolating. &ndash;&gt;-->
-
-
-<!--      </div>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;/ Animation. &ndash;&gt;-->
-
-<!--  </div>-->
-<!--</section>-->
-
-<!--&lt;!&ndash; Youtube video &ndash;&gt;-->
-<!--<section class="hero is-small is-light">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      &lt;!&ndash; Paper video. &ndash;&gt;-->
-<!--      <h2 class="title is-3">Video Presentation</h2>-->
-<!--      <div class="columns is-centered has-text-centered">-->
-<!--        <div class="column is-four-fifths">-->
-<!--          -->
-<!--          <div class="publication-video">-->
-<!--            &lt;!&ndash; Youtube embed code here &ndash;&gt;-->
-<!--            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-<!--&lt;!&ndash; End youtube video &ndash;&gt;-->
-
-
-<!--&lt;!&ndash; Video carousel &ndash;&gt;-->
-<!--<section class="hero is-small">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      <h2 class="title is-3">Another Carousel</h2>-->
-<!--      <div id="results-carousel" class="carousel results-carousel">-->
-<!--        <div class="item item-video1">-->
-<!--          <video poster="" id="video1" autoplay controls muted loop height="100%">-->
-<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
-<!--            <source src="static/videos/carousel1.mp4"-->
-<!--            type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-video2">-->
-<!--          <video poster="" id="video2" autoplay controls muted loop height="100%">-->
-<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
-<!--            <source src="static/videos/carousel2.mp4"-->
-<!--            type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--        <div class="item item-video3">-->
-<!--          <video poster="" id="video3" autoplay controls muted loop height="100%">\-->
-<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
-<!--            <source src="static/videos/carousel3.mp4"-->
-<!--            type="video/mp4">-->
-<!--          </video>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</section>-->
-<!--&lt;!&ndash; End video carousel &ndash;&gt;-->
-
-
-
-
-
-
-<!--&lt;!&ndash; Paper poster &ndash;&gt;-->
-<!--<section class="hero is-small is-light">-->
-<!--  <div class="hero-body">-->
-<!--    <div class="container">-->
-<!--      <h2 class="title">Poster</h2>-->
-
-<!--      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">-->
-<!--          </iframe>-->
-<!--        -->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
-<!--&lt;!&ndash;End paper poster &ndash;&gt;-->
+        </div>
+      </div>
+      </div>
+      </div>
+</section>
 
 
 <!--BibTex citation -->
