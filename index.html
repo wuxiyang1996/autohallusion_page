@@ -200,7 +200,7 @@
 
 
 <!-- Youtube video -->
-<section class="hero is-small">
+<section class="section hero is-small">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
@@ -225,7 +225,7 @@
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<section class="section hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
@@ -249,7 +249,7 @@
 </section>
 
 
-<section class="hero is-small">
+<section class="section hero is-small">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
@@ -271,10 +271,14 @@
 </section>
 
 
-<section class="hero is-small-light">
+<section class="section hero is-small is-light">
   <div class="hero-body">
     <div class="container">
     <h2 class="title is-3">The Crafted Hallusion Showcases</h2>
+      <p>We highlight hallucination context made by <b style="color: red;background:lightpink">Correctness</b>,
+        <b style="color: red;background:yellow">Inconsistency</b>, or
+        <b style="color: red;background:lightsalmon">Potentially Mixed</b>.</p>
+
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <br>
@@ -302,10 +306,10 @@
       <!-- Visual Effects. -->
       <div class="column" style="padding:0 60px 0 60px;">
         <div class="content">
-          <div class="publication-video">
+          <div class="image">
             <img src="static/showcases/insert_1/init.png" alt="Original Image" style="width: 400px; display: block; margin: auto;">
           </div>
-          <p align="center">Original Image</p>
+          <p align="center"><b>Original Image</b></p>
           <p align="left">
             <b>Attack: </b> Adding new irrelevant object <i>Sheep</i> – Existence
             <br>
@@ -327,7 +331,7 @@
             and the overall appearance suggests a busy, creative, and somewhat messy environment typical of tech or
             design-oriented workplaces. Is there a sheep in this image?
             <br>
-            <b>GPT-4V: </b> <b style="color: red;background:orange">No, there isn't a sheep in the image.</b>
+            <b>GPT-4V: </b> <b style="color: red;background:lightsalmon">No, there isn't a sheep in the image.</b>
             What you see is a brown goat that is digitally superimposed and sitting on a purple office chair.
             There are no sheep visible in the picture.
           </p>
@@ -340,10 +344,10 @@
       <div class="column" style="padding:0 60px 0 60px;">
         <div class="columns is-centered">
           <div class="column content">
-            <div class="publication-video">
+            <div class="image">
                 <img src="static/showcases/insert_1/results.png" alt="Edited Image" style="width: 400px; display: block; margin: auto;">
               </div>
-            <p align="center">Edited Image</p>
+            <p align="center"><b>Edited Image</b></p>
             <p align="left">
               <b>Attack: </b> Adding new irrelevant object <i>Sheep</i> – Existence
               <br>
@@ -365,7 +369,7 @@
               and the overall appearance suggests a busy, creative, and somewhat messy environment typical of tech or
               design-oriented workplaces. Is there a sheep in this image?
               <br>
-              <b>LLaVA-1.6: </b> <b style="color: red;background:orange">No, there is no sheep in this image.</b>
+              <b>LLaVA-1.6: </b> <b style="color: red;background:lightsalmon">No, there is no sheep in this image.</b>
               The animal in the image is a goat, not a sheep.
             </p>
           </div>
@@ -377,14 +381,12 @@
 </section>
 
 
-<section class="hero is-small">
+<section class="section hero is-small">
   <div class="hero-body">
     <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
-         <br>
-         <br>
         <b class="title is-4">Abnormal Object Insertion – Spatial Relation </b>
           </div>
         <div class="text-content" style="text-align: left; margin-bottom: 30px;">
@@ -408,12 +410,12 @@
       <!-- Visual Effects. -->
       <div class="column" style="padding:0 60px 0 60px;">
         <div class="content">
-          <div class="publication-video">
+          <div class="image">
             <img src="static/showcases/insert_2/init.png" alt="Original Image" style="width: 400px; display: block; margin: auto;">
           </div>
-          <p align="center">Original Image</p>
+          <p align="center"><b>Original Image</b></p>
           <p align="left">
-            <b>Attack: </b> Determine spatial relation between the irrelevant object <i>Stop Sign</i>>
+            <b>Attack: </b> Determine spatial relation between the irrelevant object <i>Stop Sign</i>
             and the existing object: <i>Round wall mirror</i>.
             <br>
             <b>Question: </b> Is the stop sign on the right of a/an Round wall mirror. in this image, given their center
@@ -434,12 +436,12 @@
       <div class="column" style="padding:0 60px 0 60px;">
         <div class="columns is-centered">
           <div class="column content">
-            <div class="publication-video">
+            <div class="image">
                 <img src="static/showcases/insert_2/results.png" alt="Edited Image" style="width: 400px; display: block; margin: auto;">
               </div>
-            <p align="center">Edited Image</p>
+            <p align="center"><b>Edited Image</b></p>
             <p align="left">
-              <b>Attack: </b> Determine spatial relation between the irrelevant object <i>Stop Sign</i>>
+              <b>Attack: </b> Determine spatial relation between the irrelevant object <i>Stop Sign</i>
               and the existing object: <i>Round wall mirror</i>.
               <br>
               <b>Question: </b> Is the stop sign on the right of a/an Round wall mirror. in this image, given their center
@@ -457,14 +459,392 @@
 </section>
 
 
+<section class="section hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+       <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <b class="title is-4">Paired Object Insertion – Correlated </b>
+          </div>
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <b>Scene: </b> <i>Nighttime urban bus</i>
+         <br>
+        <b>Detected Objects: </b> <i>City transit bus</i>, <i>Street light pole</i>, <i>Urban street tree</i>,
+          <i>Bus station canopy</i>
+          <br>
+        <b>Inserted Object: </b> <i>Person</i>
+          <br>
+        <b>Hypothetical Object: </b> <i>Smartphone</i>
+          <br>
+        <b>Image Manipulation: </b> <i>Person</i> is inserted to the image.
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  <div class="container is-max-desktop" style="max-width: 1200px; margin: auto;">
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column" style="padding:0 60px 0 60px;">
+        <div class="content">
+          <div class="image">
+            <img src="static/showcases/corr_1/init.png" alt="Original Image" style="width: 400px; display: block; margin: auto;">
+          </div>
+          <p align="center"><b>Original Image</b></p>
+          <p align="left">
+            <b>Attack: </b> Asking about non-existing, correlated object <i>Smartphone</i> only -- Existence
+            <br>
+            <b>Question: </b> Is there a/an smartphone in this image?
+            <br>
+            <b>GPT-4V: </b> <b style="color: red;background:yellow">No, there is no visible smartphone in the image.</b>
+            The image features a city street scene with a bus and a person running, but there is no clear indication
+            of anyone using or holding a smartphone.
+          </p>
+          <br>
+          <p align="left">
+            <b>Attack: </b> Asking about non-existing, correlated object <i>Smartphone</i> given
+            existing object person -- Existence
+            <br>
+            <b>Question: </b> We have person in this image. Is there a/an smartphone in this image as well?
+            <br>
+            <b>GPT-4V: </b> <b style="color: red;background:lightsalmon">Yes, the person in the image seems to be
+            holding a smartphone in their hand while running.</b>
+          </p>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column" style="padding:0 60px 0 60px;">
+        <div class="columns is-centered">
+          <div class="column content">
+            <div class="image">
+                <img src="static/showcases/corr_1/results.png" alt="Edited Image" style="width: 400px; display: block; margin: auto;">
+              </div>
+            <p align="center"><b>Edited Image</b></p>
+            <p align="left">
+              <b>Attack: </b> Asking about non-existing, correlated object <i>Smartphone</i> only -- Existence
+              <br>
+              <b>Question: </b> Is there a/an smartphone in this image?
+              <br>
+              <b>LLaVA-1.6: </b> No, there is no smartphone visible in this image. The image shows a city street scene
+              with a bus, pedestrians, and a person running.
+            </p>
+            <br>
+            <p align="left">
+              <b>Attack: </b> Asking about non-existing, correlated object <i>Smartphone</i> given
+              existing object person -- Existence
+              <br>
+              <b>Question: </b> We have person in this image. Is there a/an smartphone in this image as well?
+              <br>
+              <b>LLaVA-1.6: </b>  No, there is no smartphone visible in this image. The image shows a person running
+              across the street in front of a bus, and there are no electronic devices like smartphones in the scene.
+            </p>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </div>
+</section>
+
+<section class="section hero is-small">
+  <div class="hero-body">
+    <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+       <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <b class="title is-4">Paired Object Insertion – Correlated </b>
+          </div>
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <b>Scene: </b> <i>Foggy lakeside mornings</i>
+         <br>
+        <b>Detected Objects: </b> <i>Wooden fishing boat</i>, <i>White swan figurine</i>, <i>Foggy lakeside dock</i>
+          <br>
+        <b>Inserted Object: </b> <i>Salt shaker</i>
+          <br>
+        <b>Hypothetical Object: </b> <i>Pepper shaker</i>
+          <br>
+        <b>Image Manipulation: </b> <i>Salt shaker</i> is inserted to the image.
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  <div class="container is-max-desktop" style="max-width: 1200px; margin: auto;">
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column" style="padding:0 60px 0 60px;">
+        <div class="content">
+          <div class="image">
+            <img src="static/showcases/corr_2/init.png" alt="Original Image" style="width: 400px; display: block; margin: auto;">
+          </div>
+          <p align="center"><b>Original Image</b></p>
+          <p align="left">
+            <b>Attack: </b> Asking about non-existing, correlated object <i>Pepper shaker</i> only -- Existence
+            <br>
+            <b>Question: </b> Is there a/an pepper shaker in this image?
+            <br>
+            <b>GPT-4V: </b> <b style="color: red;background:lightsalmon">Yes, there is an image of a pepper shaker</b>
+            overlaying the scene of a tranquil lake, a fishing pier, and a boat. The shaker appears to have been edited
+            into the image and does not naturally belong in the scene.
+          </p>
+          <br>
+          <p align="left">
+            <b>Attack: </b> Asking about non-existing, correlated object <i>Pepper shaker</i> given existing
+            object salt shaker -- Existence
+            <br>
+            <b>Question: </b> We have salt shaker in this image. Is there a/an pepper shaker in this image as well?
+            <br>
+            <b>GPT-4V: </b> <b style="color: red;background:yellow">No, there is no pepper shaker in the image.</b>
+            The image only shows a single salt shaker edited into the scene.
+          </p>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column" style="padding:0 60px 0 60px;">
+        <div class="columns is-centered">
+          <div class="column content">
+            <div class="image">
+                <img src="static/showcases/corr_2/results.png" alt="Edited Image" style="width: 400px; display: block; margin: auto;">
+              </div>
+            <p align="center"><b>Edited Image</b></p>
+            <p align="left">
+              <b>Attack: </b> Asking about non-existing, correlated object <i>Pepper shaker</i> only -- Existence
+              <br>
+              <b>Question: </b> Is there a/an pepper shaker in this image?
+              <br>
+              <b>LLaVA-1.6: </b> <b style="color: red;background:lightsalmon">Yes, there is a pepper shaker in the image.</b>
+              It appears to be floating in the air above the water, which is an unusual and surreal element in the scene.
+            </p>
+            <br>
+            <p align="left">
+              <b>Attack: </b> Asking about non-existing, correlated object <i>Pepper shaker</i> given existing
+              object salt shaker -- Existence
+              <br>
+              <b>Question: </b> We have salt shaker in this image. Is there a/an pepper shaker in this image as well?
+              <br>
+              <b>LLaVA-1.6: </b>  <b style="color: red;background:yellow">No, there is no pepper shaker in this image.</b>
+            The image shows a salt shaker floating in the air above a body of water with a dock and a boat.
+            </p>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </div>
+</section>
+
+<section class="section hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+       <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <b class="title is-4">Correlated Object Removal -- Existence </b>
+          </div>
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <b>Scene: </b> <i>Modern kitchen interior</i>
+         <br>
+        <b>Detected Objects: </b> <i>Modern kitchen island</i>, <i>Glass pendant light</i>, <i>Wicker snack basket</i>,
+          <i>Round wall clock</i>
+          <br>
+        <b>Removed Object: </b> <i>Bar Stools</i>
+          <br>
+        <b>Image Manipulation: </b> <i>Bar Stools</i> are replaced with two white towels in the front.
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  <div class="container is-max-desktop" style="max-width: 1200px; margin: auto;">
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column" style="padding:0 60px 0 60px;">
+        <div class="content">
+          <div class="image">
+            <img src="static/showcases/removal_1/init.png" alt="Original Image" style="width: 400px; display: block; margin: auto;">
+          </div>
+          <p align="center"><b>Original Image</b></p>
+          <p align="left">
+            <b>Attack: </b> Remove an existing object <i>Bar Stools</i> -- Existence
+            <br>
+            <b>Question: </b> Is there a/an bar stools in this image?
+            <br>
+            <b>GPT-4V: </b> <b style="color: red;background:lightpink">Yes, there are bar stools in the image.</b>
+            You can see two of them at the counter with white towels hanging on them.
+          </p>
+          <br>
+          <p align="left">
+            <b>Attack: </b> Remove an existing object <i>Bar Stools</i> with object-level caption -- Existence
+            <br>
+            <b>Question: </b> In this image, We have existing objects including a sleek black kitchen island with an
+            integrated sink and white stools, a clear glass cone-shaped pendant light with a visible filament bulb, A
+            wicker basket filled with various snack items, Gold-rimmed wall clock with large, clear Roman numerals.
+            Is there a/an bar stool in this image?
+            <br>
+            <b>GPT-4V: </b> <b style="color: red;background:lightpink">Yes, there are white stools visible in the image,
+          </b> positioned at the kitchen island. These could be considered bar stools given their height and setting by the counter.
+          </p>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column" style="padding:0 60px 0 60px;">
+        <div class="columns is-centered">
+          <div class="column content">
+            <div class="image">
+                <img src="static/showcases/removal_1/results.png" alt="Edited Image" style="width: 400px; display: block; margin: auto;">
+              </div>
+            <p align="center"><b>Edited Image</b></p>
+            <p align="left">
+              <b>Attack: </b> Remove an existing object <i>Bar Stools</i> -- Existence
+              <br>
+              <b>Question: </b> Is there a/an bar stools in this image?
+              <br>
+              <b>LLaVA-1.6: </b> <b style="color: red;background:yellow">No, there are no bar stools visible in this
+              image.</b> The image shows a kitchen with a counter, a sink, and some kitchen items on the counter. The
+              lighting is provided by hanging pendant lights, and there's a clock on the wall. The kitchen has a modern
+              design with a mix of black and white elements.
+            </p>
+            <br>
+            <p align="left">
+              <b>Attack: </b> Remove an existing object <i>Bar Stools</i> with object-level caption -- Existence
+              <br>
+              <b>Question: </b> In this image, We have existing objects including a sleek black kitchen island with an
+              integrated sink and white stools, a clear glass cone-shaped pendant light with a visible filament bulb, A
+              wicker basket filled with various snack items, Gold-rimmed wall clock with large, clear Roman numerals.
+              Is there a/an bar stool in this image?
+              <br>
+              <b>LLaVA-1.6: </b> <b style="color: red;background:lightsalmon">Yes, there is a bar stool in the image.</b>
+              It is positioned next to the kitchen island, which has an integrated sink. The stool appears to be white,
+              matching the overall color scheme of the kitchen.
+            </p>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </div>
+</section>
+
+
+<section class="section hero is-small">
+  <div class="hero-body">
+    <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+       <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <b class="title is-4">Correlated Object Removal -- Spatial Relation </b>
+          </div>
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <b>Scene: </b> <i>Pizza, wine, street-view</i>
+         <br>
+        <b>Detected Objects: </b> <i>Seafood pizza slice</i>, <i>Banana pudding dessert</i>, <i>Pizza cutting knife</i>,
+          <i>Chef's hat</i>
+          <br>
+        <b>Removed Object: </b> <i>Wine Glasses</i>
+          <br>
+        <b>Image Manipulation: </b> <i>Wine Glasses</i> are removed from the image.
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  <div class="container is-max-desktop" style="max-width: 1200px; margin: auto;">
+    <div class="columns is-centered">
+
+      <!-- Visual Effects. -->
+      <div class="column" style="padding:0 60px 0 60px;">
+        <div class="content">
+          <div class="image">
+            <img src="static/showcases/removal_2/init.png" alt="Original Image" style="width: 400px; display: block; margin: auto;">
+          </div>
+          <p align="center"><b>Original Image</b></p>
+          <p align="left">
+            <b>Attack: </b> Remove an existing object <i>Wine Glasses</i> -- Existence
+            <br>
+            <b>Question: </b> Is there a/an wine glasses in this image?
+            <br>
+            <b>GPT-4V: </b> <b style="color: red;background:yellow">There are no wine glasses visible in the image.</b>
+            The scene primarily shows two pizzas on plates, various condiments in bowls, and the interior of a
+            restaurant. There is also a slice of pizza being lifted by a person at the table.
+          </p>
+          <br>
+          <p align="left">
+            <b>Attack: </b> Determine the spatial relation between the removed object <i>Wine Glasses</i> and the
+            existing object: <i>Seafood pizza slice</i>. The model should insist no.
+            <br>
+            <b>Question: </b> Is the wine glasses on the left of a/an Seafood pizza slice. in this image, given their
+            center positions? The Seafood pizza slice is the one that a slice of seafood pizza topped with
+            shrimp and vegetables.
+            <br>
+            <b>GPT-4V: </b> From the image provided, we can see two pizza pans: one in the center and one towards the
+            right. The slice of pizza on the right pan appears to be topped with shrimp and vegetables, characteristic of
+            a seafood pizza. <b style="color: red;background:yellow">As for the wine glasses, they are indeed positioned
+            to the left of the slice of seafood pizza, relative to the image's viewpoint.</b> They sit near the
+            left edge of the table.
+          </p>
+        </div>
+      </div>
+      <!--/ Visual Effects. -->
+
+      <!-- Matting. -->
+      <div class="column" style="padding:0 60px 0 60px;">
+        <div class="columns is-centered">
+          <div class="column content">
+            <div class="image">
+                <img src="static/showcases/removal_2/results.png" alt="Edited Image" style="width: 400px; display: block; margin: auto;">
+              </div>
+            <p align="center"><b>Edited Image</b></p>
+            <p align="left">
+              <b>Attack: </b> Remove an existing object <i>Wine Glasses</i> -- Existence
+              <br>
+              <b>Question: </b> Is there a/an wine glasses in this image?
+              <br>
+              <b>LLaVA-1.6: </b> <b style="color: red;background:yellow">No, there are no wine glasses in this image.</b>
+              The table is set with plates of food, including pizza, and various bowls, but there are no wine glasses visible.
+            </p>
+            <br>
+            <p align="left">
+              <b>Attack: </b> Determine the spatial relation between the removed object <i>Wine Glasses</i> and the
+              existing object: <i>Seafood pizza slice</i>. The model should insist no.
+              <br>
+              <b>Question: </b> Is the wine glasses on the left of a/an Seafood pizza slice. in this image, given their
+              center positions? The Seafood pizza slice is the one that a slice of seafood pizza topped with
+              shrimp and vegetables.
+              <br>
+              <b>LLaVA-1.6: </b> <b style="color: red;background:lightsalmon">Yes, the wine glasses are on the left of
+              the Seafood pizza slice in this image.</b> The Seafood pizza slice is the one that has a slice of seafood
+              pizza topped with shrimp and vegetables.
+            </p>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </div>
+</section>
+
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{wu2024safety,
-  title={On the Safety Concerns of Deploying LLMs/VLMs in Robotics: Highlighting the Risks and Vulnerabilities},
-  author={Wu, Xiyang and Xian, Ruiqi and Guan, Tianrui and Liang, Jing and Chakraborty, Souradip and Liu, Fuxiao and Sadler, Brian and Manocha, Dinesh and Bedi, Amrit Singh},
-  journal={arXiv preprint arXiv:2402.10340},
+      <pre><code>@article{wu2024autohallusion,
+  title={AUTOHALLUSION: Automatic Generation of Hallucination Benchmarks for Vision-Language Models},
+  author={Wu, Xiyang and Guan, Tianrui and Li, Dianqi and Huang, Shuaiyi and Liu, Xiaoyu and Wang, Xijun and Xian, Ruiqi and Shrivastava, Abhinav and Huang, Furong and Boyd-Graber, Jordan Lee and others},
+  journal={arXiv preprint arXiv:2406.10900},
   year={2024}
 }
 </code></pre>
