@@ -36,6 +36,7 @@
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+  <script src="https://kit.fontawesome.com/b4027ac9ad.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -101,14 +102,14 @@
                       </a>
                     </span>
 
-<!--                    &lt;!&ndash; Supplementary PDF link &ndash;&gt;-->
+<!--                    &lt;!&ndash; Twitter link &ndash;&gt;-->
 <!--                    <span class="link-block">-->
-<!--                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"-->
+<!--                      <a href="https://x.com/terryguan97/status/1814757000066253120" target="_blank"-->
 <!--                      class="external-link button is-normal is-rounded is-dark">-->
-<!--                      <span class="icon">-->
-<!--                        <i class="fas fa-file-pdf"></i>-->
-<!--                      </span>-->
-<!--                      <span>Supplementary</span>-->
+<!--&lt;!&ndash;                      <span class="icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <i class="fa-brands fa-x-twitter"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                      </span>&ndash;&gt;-->
+<!--                      <span>Twitter</span>-->
 <!--                    </a>-->
 <!--                  </span>-->
 
@@ -122,6 +123,17 @@
                     <span>Code</span>
                   </a>
                 </span>
+
+<!--                  &lt;!&ndash; Dataset link &ndash;&gt;-->
+<!--                    <span class="link-block">-->
+<!--                      <a href="https://github.com/wuxiyang1996/AutoHallusion?tab=readme-ov-file#benchmark" target="_blank"-->
+<!--                      class="external-link button is-normal is-rounded is-dark">-->
+<!--&lt;!&ndash;                      <span class="icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <i class="fa-solid fa-database"></i>&ndash;&gt;-->
+<!--&lt;!&ndash;                      </span>&ndash;&gt;-->
+<!--                      <span>Dataset</span>-->
+<!--                    </a>-->
+<!--                  </span>-->
 
                 <!-- ArXiv abstract Link -->
 <!--                <span class="link-block">-->
@@ -170,22 +182,21 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-           Large vision-language models (LVLMs) hallucinate: certain context cues in an image may trigger the language
-            module's overconfident and incorrect reasoning on abnormal or hypothetical objects. Though a few benchmarks
-            have been developed to investigate LVLM hallucinations, they mainly rely on hand-crafted corner cases whose
-            fail patterns may hardly generalize, and finetuning on them could undermine their validity. These motivate
-            us to develop the first automatic benchmark generation approach, AUTOHALLUSION, that harnesses a few
-            principal strategies to create diverse hallucination examples. It probes the language modules in LVLMs for
-            context cues and uses them to synthesize images by: (1) adding objects abnormal to the context cues; (2)
-            for two co-occurring objects, keeping one and excluding the other; or (3) removing objects closely tied to
-            the context cues. It then generates image-based questions whose ground-truth answers contradict the language
-            module's prior. A model has to overcome contextual biases and distractions to reach correct answers, while
-            incorrect or inconsistent answers indicate hallucinations. AUTOHALLUSION enables us to create new benchmarks
-            at the minimum cost and thus overcomes the fragility of hand-crafted benchmarks. It also reveals common
-            failure patterns and reasons, providing key insights to detect, avoid, or control hallucinations.
-            Comprehensive evaluations of top-tier LVLMs, e.g., GPT-4V(ision), Gemini Pro Vision, Claude 3, and LLaVA-1.5,
-            show a 97.7% and 98.7% success rate of hallucination induction on synthetic and real-world datasets of
-            AUTOHALLUSION, paving the way for a long battle against hallucinations.
+           Large vision-language models (LVLMs) are prone to hallucinations, where certain contextual cues in an image
+            can trigger the language module to produce overconfident and incorrect reasoning about abnormal or hypothetical
+            objects. While some benchmarks have been developed to investigate LVLM hallucinations, they often rely on
+            hand-crafted corner cases whose failure patterns may not generalize well. Additionally, fine-tuning on these
+            examples could undermine their validity. To address this, we aim to scale up the number of cases through an
+            automated approach, reducing human bias in crafting such corner cases. This motivates the development of
+            AutoHallusion, the first automated benchmark generation approach that employs several key strategies to
+            create a diverse range of hallucination examples. Our generated visual-question pairs pose significant
+            challenges to LVLMs, requiring them to overcome contextual biases and distractions to arrive at correct
+            answers. AutoHallusion enables us to create new benchmarks at the minimum cost and thus overcomes the
+            fragility of hand-crafted benchmarks. It also reveals common failure patterns and reasons, providing key
+            insights to detect, avoid, or control hallucinations. Comprehensive evaluations of top-tier LVLMs, e.g.,
+            GPT-4V(ision), Gemini Pro Vision, Claude 3, and LLaVA-1.5, show a 97.7% and 98.7% success rate of hallucination
+            induction on synthetic and real-world datasets of AutoHallusion, paving the way for a long battle against
+            hallucinations.
 <!--          <br>-->
 <!--            <br>-->
 <!--            <b>TL, DR:</b> We develop the first automatic benchmark generation approach that harnesses a few principal-->
@@ -1049,27 +1060,59 @@
 <section class="section hero is-small">
   <div class="hero-body">
     <div class="container">
+    <h2 class="title is-3">Benchmark Metrics</h2>
+      <p> We assess the benchmark based on the following three aspects:
+        <br>
+      <b>Diversity</b> indicates the number of different scenes and objects to construct the dataset, out of 200 (synthetic) / 160 (real-world) samples.
+        <br>
+      <b>Image Quality</b> is represented using the Inception Score for both original and edited images, and Frechet Inception Distance between the original and edited images.
+      <br>
+        <b>Effectiveness</b>  is measured by the average number of questions constructed to induce hallucination.
+      </p>
+      <div class="image">
+          <img src="static/images/metric.png" alt="Benchmark Metrics" style="width: 1200px; display: block; margin: auto;">
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+    <h2 class="title is-3">Leaderboard</h2>
+      <p> We provide the leaderboard of SOTA LVLMs on the benchmark created by AUTOHALLUSION. We highlight the top-performing model.</p>
+      <br>
+      <div class="image">
+          <img src="static/images/leaderboard.png" alt="Leaderboard" style="width: 800px; display: block; margin: auto;">
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section hero is-small">
+  <div class="hero-body">
+    <div class="container">
     <h2 class="title is-3">Experiment Results</h2>
-      <p>We use the following metrics to evalute our results, including: Attack Success Rate (ASR),
-        Manipulation Attack Success Rate (MASR) (Compare the generated response with the ground truth generated based
-        on the intention of the image generation and editing), and Conflict Attack Success Rate (CASR) (Ask a set of
-        questions and try to find conflicts among all responses to those visual questions). </p>
+      <p>We conduct evaluation experiments over SOTA LVLMs with our AUTOHALLUSION on synthetic and real-world data. Our
+        proposed three manipulation strategies achieved high success rates (the higher the better) on synthetic and
+        real-world data.</p>
       <br>
       <div class="image">
           <img src="static/images/results.png" alt="Main Results" style="width: 800px; display: block; margin: auto;">
         </div>
       <br>
-      <p>We conduct evaluation experiments over SOTA LVLMs with our AUTOHALLUSION on synthetic and real-world data. Our
-        proposed three manipulation strategies achieved high success rates (the higher the better) on synthetic and
-        real-world data.</p>
+            </div>
+    </div>
+</section>
 
-      <br>
-
-  <h4 class="title is-4">Ablation Studies</h4>
+<section class="section hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+  <h4 class="title is-3">Ablation Studies</h4>
   <div class="container is-max-desktop" style="max-width: 1200px; margin: auto;">
     <div class="columns is-centered">
 
-
+    <p><br></p>
       <!-- Visual Effects. -->
       <div class="column" style="padding:0 60px 0 60px;">
         <div class="content">
